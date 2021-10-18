@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+    font-family: cursive;
+    margin: auto;
+    text-align: center;
+}
+
+button{
+    font-family: cursive;
+    background-color: transparent;
+    border: transparent;
+}
+h1{
+    text-align: center;
+}
+input{
+    font-family: cursive;
+    border: none;
+}
+
+option{
+    font-family: cursive;
+
+}
+.done {
+    text-decoration: line-through;
+}
+
+.todo-filter {
+    /* background-color: lightskyblue; */
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.todo-sort{
+    /* background-color: lightskyblue; */
+    padding: 5px;
+    display: inline-block;
+}
+
+.add-todo {
+    background-color: rgb(238, 196, 179);
+    padding: 5px;
+    text-align: center;
+}
+
+.todo-stat {
+    background-color: lightslategray;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.todo-stat span {
+    color: lightskyblue
+}
+
+.arrow-btns{
+    background-color: transparent;
+    color: transparent;
+}

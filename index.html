@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <h1>Lets Todo</h1>
+    <section class="todo-filter">
+        <h2>Filter</h2>
+        <input type="button" class="ALL" value="All" onclick="onSetFilter(this.className)">
+        <input type="button" class="ACTIVE" value="Active" onclick="onSetFilter(this.className)">
+        <input type="button" class="DONE" value="Done" onclick="onSetFilter(this.className)">
+    </section>
+    <section class="todo-sort">
+        <h2>Sort by</h2>
+        <select onchange="onSetSort(this.value)">
+            <option value ="" selected disabled hidden>sort by</option>
+            <option value="CREATED">Time</option>
+            <option value="TEXT">Alphabet</option>
+            <option value="IMPORTANCE">Importance</option>
+        </select>
+    </section>
+    <ul class="todo-list"></ul>
+    <div class="no-todos"></div>
+    <section class="todo-stat">
+        <h4>
+            Total Todos: 
+            <span class="total-count"></span>
+            Active:
+            <span class="active-count"></span>
+        </h4>
+    </section>`
+
+    <section class="add-todo">
+        <h6>Add Todo</h6>
+        <input class="txt-input" type="text" placeholder="What todo?" />
+        <input class="importance-input" value="3" type="number" min="1" max="3" placeholder="importace" />
+        <button onclick="onAddTodo()">Add</button>
+    </section>
+
+
+
+
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/todo.service.js"></script>
+    <script src="js/todo-controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
